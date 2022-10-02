@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap demo</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <link rel="stylesheet" href="./style.sass">
+
+        <style>
+            #content-carding {
+                margin-top: 80px;
+                height: auto;
+            }
+
+            #img-carding {
+                background-size: contain;
+            }
+
+            .card {
+                padding: 10px;
+            }
+
+            #img-modal {
+                width: 120px;
+                height: 240px;
+            }
+
+            footer {
+                color: white;
+                text-align: center;
+                height: 40vh;
+                display: flex;
+            }
+
+            #name-com {
+                font-weight: bold;
+                color: #2d2d2d;
+                text-transform: uppercase;
+            }
+
+            @media screen and (min-width: 768px) {}
+        </style>
+    </head>
+
+    <body class="bg-body">
+        <header>
+            <nav class="navbar navbar-expand-lg d-flex justify-content-center text-center">
+                <div class="container-fluid ">
+                    <a class="navbar-brand" id="name-com" href="#">Sahabat Tenun</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse p-2" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Features</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Pricing</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+
+        <div id="carouselExampleCaptions" class="carousel slide container m-3 m-auto mt-3 " data-bs-ride="false">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner rounded-3 ">
+                <div class="carousel-item active">
+                    <img src="./img/header.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/header02.jpg" class="d-block w-100 " alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div class="container d-flex justify-content-center flex-column text-center" style="height:60vh ;">
+            <div class="text-header">
+                <h1 class=" m-auto" id="name-com">Sahabat Tenun</h1>
+                <p class=" m-auto">Jual Beli tenun terbaik hanya di <span id="name-com">sahabat tenun</span></p>
+            </div>
+        </div>
+        <div
+            class="card-content container-fluid d-flex row m-auto justify-content-center justify-content-evenly p-4 text-center">
+            <div class="card h-50 " style="width: 18rem;">
+                <img src="./img/item2.jpg" class="card-img-top" id="img-carding" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">Launch demo modal
+                    </button>
+                </div>
+            </div>
+            <div class="card h-50" style="width: 18rem;">
+                <img src="./img/item2.jpg" class="img-size card-img-top" id="img-carding" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">Launch demo modal
+                    </button>
+                </div>
+            </div>
+            <div class="card h-50" style="width: 18rem;">
+                <img src="./img/item6.jpg" class="card-img-top" id="img-carding" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">Launch demo modal
+                    </button>
+                </div>
+            </div>
+            <div class="card h-50" style="width: 18rem;">
+                <img src="./img/item8.jpg" class="card-img-top" id="img-carding" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">Launch demo modal
+                    </button>
+                </div>
+            </div>
+            <div class="card h-50" style="width: 18rem;">
+                <img src="./img/item9.jpg" class="card-img-top" id="img-carding" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">Launch demo modal
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!--Modal Start here-->
+
+        <!-- Modal -->
+        <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="carouselExampleControls" class="carousel slide " data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./img/item1.jpg" class="d-block w-100" id="img-modal" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./img/item2.jpg" class="d-block w-100" id="img-modal" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./img/item4.jpg" class="d-block w-100" id="img-modal" alt="...">
+                                </div>
+                            </div>
+
+                            <div class=" modal-text text-center">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In quaerat architecto nisi
+                                    corporis perferendis aperiam facilis dolor, ad eum consectetur.</p>
+                            </div>
+
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- <div class="modal-body text-center">
+                        <div class="content d-flex row justify-content-center">
+                            <img src="./img/item10.jpg" class=" w-50 p-3" alt="">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quasi accusantium fugiat
+                                minus
+                                ab nam debitis architecto et vel non tempora, sit rerum corrupti accusamus sint soluta
+                                voluptates doloremque eligendi?</p>
+                        </div>
+
+                    </div> -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <footer id="" class="bg-dark d-flex">
+            <div class="content-footer d-flex flex-column justify-content-center m-4">
+                <div class="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur fugit nobis modi rem earum,
+                        at quis maiores nisi eius veritatis fugiat dicta asperiores sequi numquam soluta, repellat quae
+                        voluptas odit corrupti eos assumenda eveniet. Aspernatur quos quaerat eum quam, quo voluptatum
+                        deleniti, ullam laboriosam accusamus temporibus ab vel. Ad, eaque.</p>
+                </div>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+            crossorigin="anonymous"></script>
+    </body>
+
+</html>
